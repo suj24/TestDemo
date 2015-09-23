@@ -46,11 +46,5 @@ class LoginTestCest
 
 
     }
-    function loginWithUnregisteredUser(\AcceptanceTester $I, \Page\Login $loginPage)
-    {
-        $loginPage->loginWithEmailAndPassword('test@gmail.com', 'debby');
-        $I->amOnPage('/');
-        $I->see('Bill Evans Profile', 'h1');
-
-    }
+    
 }
